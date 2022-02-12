@@ -1,0 +1,6 @@
+server:
+  port: 8086
+
+app:
+  service:
+    name: Egs User Repository Service
