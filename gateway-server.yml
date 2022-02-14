@@ -11,8 +11,11 @@ zuul:
       path: /user/*
       url: http://localhost:8082/user
     main-page:
-      path: /main
-      url: http://localhost:8082/main
+      path: /
+      url: http://localhost:8082/
+    second-main:
+      path: /hello/
+      url:  http://localhost:8082/main/
 # if we need customize routing config we will write all routes here and disable eureka ribbon service
 # config example will be commented because we haven't any working service, it's only test
 
