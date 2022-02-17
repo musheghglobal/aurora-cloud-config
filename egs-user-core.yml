@@ -1,6 +1,0 @@
-server:
-  port: 8085
-
-app:
-  service:
-    name: Egs User Core Service
