@@ -4,3 +4,13 @@ server:
 app:
   service:
     name: User Service Core Application
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/user_service?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
