@@ -7,11 +7,6 @@ spring:
   application:
     name: gateway-server
   cloud:
-    bus:
-      enabled: true
-      refresh:
-        enabled: true
-     
     gateway:
       discovery:
         locator:
