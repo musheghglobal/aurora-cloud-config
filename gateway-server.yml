@@ -9,6 +9,8 @@ spring:
   cloud:
     bus:
       enabled: true
+      refresh:
+        enabled: true
      
     gateway:
       discovery:
