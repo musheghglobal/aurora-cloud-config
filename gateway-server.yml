@@ -1,5 +1,5 @@
 property:
-  test: 'hajox'
+  test: 'barev'
 server:
   port: 8080
   
