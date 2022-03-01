@@ -3,7 +3,7 @@ server:
 
 app:
   service:
-    name: User Service Core Application
+    name: user-service-rest
 
 spring:
   datasource:
