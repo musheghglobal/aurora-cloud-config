@@ -21,7 +21,7 @@ spring:
   datasource:
     username: root
     password: root
-    url: jdbc:postgresql://localhost:5432/mail_db
+    url: jdbc:postgresql://localhost:5433/mail_db
   jpa:
     hibernate:
       ddl-auto: update
