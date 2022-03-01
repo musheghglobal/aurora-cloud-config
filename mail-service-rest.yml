@@ -19,8 +19,8 @@ spring:
 
  #postgreSql properties
   datasource:
-    username: root
-    password: root
+    username: postgres
+    password: postgres
     url: jdbc:postgresql://localhost:5433/mail_db
   jpa:
     hibernate:
@@ -33,8 +33,8 @@ spring:
   #flyway properties
   flyway:
     user: postgres
-    password: root
-    url: jdbc:postgresql://localhost:5432/mail_db
+    password: postgres
+    url: jdbc:postgresql://localhost:5433/mail_db
     driver-class-name: org.postgresql.Driver
     validate-on-migrate: false
     baseline-on-migrate: true
