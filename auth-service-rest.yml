@@ -1,0 +1,37 @@
+dwarf:
+  base:
+    package: '"com.energizeglobal.authservicerest.endpoint"'
+  mail:
+    verify:
+      url: http://localhost:8078/auth/verify_email/
+server:
+  port: 8078
+spring:
+  datasource:
+    password: postgres
+    url: jdbc:postgresql://localhost:5433/
+    username: postgres
+  flyway:
+    baseline-on-migrate: true
+    driver-class-name: org.postgresql.Driver
+    password: postgres
+    schemas: auth_service_db
+    url: jdbc:postgresql://localhost:5433/
+    user: postgres
+    validate-on-migrate: false
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: validate
+      naming:
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyJpaCompliantImpl
+    properties:
+      hibernate:
+        format_sql: true
+    show-sql: true
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+token:
+  expiration: 6000
+  secret: secret
